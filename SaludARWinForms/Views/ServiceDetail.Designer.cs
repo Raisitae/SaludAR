@@ -50,6 +50,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "ServiceDetail";
             Text = "ServiceDetail";
+            Load += ServiceDetail_Load;
             ResumeLayout(false);
             PerformLayout();
         }

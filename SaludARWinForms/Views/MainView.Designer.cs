@@ -88,6 +88,7 @@
             Controls.Add(button1);
             Name = "MainView";
             Text = "MainView";
+            Load += MainView_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -28,12 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "ServiceAdd";
+            label1 = new Label();
+            btnMedicamento = new Button();
+            btnLaboratorio = new Button();
+            btnInternacion = new Button();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(234, 69);
+            label1.Name = "label1";
+            label1.Size = new Size(324, 28);
+            label1.TabIndex = 1;
+            label1.Text = "Que tipo de servicio desea agregar?";
+            label1.Click += label1_Click;
+            // 
+            // btnMedicamento
+            // 
+            btnMedicamento.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            btnMedicamento.Location = new Point(162, 123);
+            btnMedicamento.Name = "btnMedicamento";
+            btnMedicamento.Size = new Size(463, 63);
+            btnMedicamento.TabIndex = 2;
+            btnMedicamento.Text = "Medicamento";
+            btnMedicamento.UseVisualStyleBackColor = true;
+            btnMedicamento.Click += btnMedicamento_Click;
+            // 
+            // btnLaboratorio
+            // 
+            btnLaboratorio.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLaboratorio.Location = new Point(162, 203);
+            btnLaboratorio.Name = "btnLaboratorio";
+            btnLaboratorio.Size = new Size(463, 63);
+            btnLaboratorio.TabIndex = 3;
+            btnLaboratorio.Text = "Laboratorio";
+            btnLaboratorio.UseVisualStyleBackColor = true;
+            // 
+            // btnInternacion
+            // 
+            btnInternacion.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            btnInternacion.Location = new Point(162, 291);
+            btnInternacion.Name = "btnInternacion";
+            btnInternacion.Size = new Size(463, 63);
+            btnInternacion.TabIndex = 4;
+            btnInternacion.Text = "Internacion";
+            btnInternacion.UseVisualStyleBackColor = true;
+            // 
+            // ServiceAdd
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnInternacion);
+            Controls.Add(btnLaboratorio);
+            Controls.Add(btnMedicamento);
+            Controls.Add(label1);
+            Name = "ServiceAdd";
+            Text = "ServiceAdd";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private Button btnMedicamento;
+        private Button btnLaboratorio;
+        private Button btnInternacion;
     }
 }

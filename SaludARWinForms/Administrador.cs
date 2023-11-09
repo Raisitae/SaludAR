@@ -1,6 +1,9 @@
-﻿using System;
+﻿using SaludARWinForms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,23 +12,37 @@ namespace SaludARWinForms
     internal class Administrador
     {
         private List<ServicioMedico> Servicios;
-        private List<Medicamento> Medicamento;
+        public List<Medicamento> Medicamentos;
 
-        public Administrador(List<ServicioMedico> servicios, List<Medicamento> medicamento)
+        public Administrador()
         {
-            Servicios = servicios;
-            Medicamento = medicamento;
+            this.Servicios  = new List<ServicioMedico>();
+            this.Medicamentos = new List<Medicamento>();
         }
+       
 
         public void addServicio() { }
             //new servicio switch de acuredo al tipo de servicio
             //pushear a la lista de servicios
 
-        public void addMedicamento() { }
+        public void addMedicamento(Medicamento medicamento) {
+
+            Medicamentos.Add(medicamento);
+        }
         //new medicamento
         //pushear a la lista de medicamentos
 
-        public void showAll() { }
+
+        public void showAll()
+        {
+           
+            foreach (var elemento in Medicamentos)
+            {
+                MessageBox.Show($"Nombre: {elemento.Nombre}, Porcentaje Ganancia: {elemento.Porcentaje_ganancia} , Precio Lista: {elemento.Precio_lista}");
+                // Imprime más campos si es necesario
+            }
+        }
+
         //return servicios y medicamentos
 
 
@@ -34,3 +51,4 @@ namespace SaludARWinForms
 
     }
 }
+

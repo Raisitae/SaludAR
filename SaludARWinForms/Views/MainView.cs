@@ -27,11 +27,19 @@ namespace SaludARWinForms
 
         private void btnDetail_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Administrador mostrarServicio;
+            mostrarServicio = new Administrador();
+            mostrarServicio.showAll();
+            /*this.Hide();
             Form formDetail = new ServiceDetail();
             formDetail.ShowDialog();
             formDetail = null;
-            this.Show();
+            this.Show();*/
+        }
+
+        private void MainView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

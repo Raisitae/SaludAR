@@ -13,6 +13,7 @@ namespace SaludARWinForms.Views
 {
     public partial class ServiceDetail : Form
     {
+        private Administrador mostrarServicio;
         public ServiceDetail()
         {
             InitializeComponent();
@@ -25,6 +26,12 @@ namespace SaludARWinForms.Views
             formAdd.ShowDialog();
             formAdd = null;
             this.Show();
+        }
+
+        private void ServiceDetail_Load(object sender, EventArgs e)
+        {
+            mostrarServicio = new Administrador();
+            mostrarServicio.showAll();
         }
     }
 }

@@ -16,3 +16,23 @@ C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\obj\Debug\net7.0-w
 C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.pdb
 C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.genruntimeconfig.cache
 C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\obj\Debug\net7.0-windows\ref\SaludARWinForms.dll
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.MainView.resources
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.ServiceAdd.resources
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.Views.ServiceDetail.resources
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.csproj.GenerateResource.cache
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.AssemblyInfo.cs
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.dll
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\obj\Debug\net7.0-windows\refint\SaludARWinForms.dll
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.pdb
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.Views.MedicamentoService.resources
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\bin\Debug\net7.0-windows\SaludARWinForms.exe
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\bin\Debug\net7.0-windows\SaludARWinForms.deps.json
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\bin\Debug\net7.0-windows\SaludARWinForms.runtimeconfig.json
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\bin\Debug\net7.0-windows\SaludARWinForms.dll
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\bin\Debug\net7.0-windows\SaludARWinForms.pdb
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.genruntimeconfig.cache
+C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\obj\Debug\net7.0-windows\ref\SaludARWinForms.dll
+C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.Views.MedicamentoService.resources
