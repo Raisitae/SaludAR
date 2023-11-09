@@ -8,23 +8,23 @@
     "net7.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\rerlich\\.nuget\\packages\\": {},
+    "C:\\Users\\USUARIO\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rerlich\\source\\repos\\SaludARWinForms\\SaludARWinForms\\SaludARWinForms.csproj",
+      "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\Joaquin Soria\\Tecnicatura Desarrollo de Software\\Paradigma de Objetos\\SaludAR\\SaludARWinForms\\SaludARWinForms.csproj",
       "projectName": "SaludARWinForms",
-      "projectPath": "C:\\Users\\rerlich\\source\\repos\\SaludARWinForms\\SaludARWinForms\\SaludARWinForms.csproj",
-      "packagesPath": "C:\\Users\\rerlich\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rerlich\\source\\repos\\SaludARWinForms\\SaludARWinForms\\obj\\",
+      "projectPath": "C:\\Users\\USUARIO\\Desktop\\Joaquin Soria\\Tecnicatura Desarrollo de Software\\Paradigma de Objetos\\SaludAR\\SaludARWinForms\\SaludARWinForms.csproj",
+      "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USUARIO\\Desktop\\Joaquin Soria\\Tecnicatura Desarrollo de Software\\Paradigma de Objetos\\SaludAR\\SaludARWinForms\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\rerlich\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
