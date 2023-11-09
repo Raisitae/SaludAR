@@ -4,6 +4,9 @@
     <Compile Update="Views\MedicamentoService.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\ModalServices.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\ServiceAdd.cs">
       <SubType>Form</SubType>
     </Compile>

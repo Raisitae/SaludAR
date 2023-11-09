@@ -27,14 +27,20 @@ namespace SaludARWinForms
 
         private void btnDetail_Click(object sender, EventArgs e)
         {
-            Administrador mostrarServicio;
-            mostrarServicio = new Administrador();
-            mostrarServicio.showAll();
-            /*this.Hide();
-            Form formDetail = new ServiceDetail();
-            formDetail.ShowDialog();
-            formDetail = null;
-            this.Show();*/
+
+            Administrador admin = Administrador.GetInstance();
+
+            Medicamento medicamento1 = new Medicamento("prueba",333,444);
+            admin.addMedicamento(medicamento1);
+            Medicamento medicamento2 = new Medicamento("prueba2", 333, 444);
+            admin.addMedicamento(medicamento2);
+
+            admin.showAll();
+            this.Hide();
+            Form formGrid = new ModalServices();
+            formGrid.ShowDialog();
+            formGrid = null;
+            this.Show();
         }
 
         private void MainView_Load(object sender, EventArgs e)

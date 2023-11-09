@@ -1,11 +1,5 @@
-﻿using SaludARWinForms;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace SaludARWinForms
 {
@@ -14,41 +8,45 @@ namespace SaludARWinForms
         private List<ServicioMedico> Servicios;
         public List<Medicamento> Medicamentos;
 
-        public Administrador()
+        // Singleton instance
+        private static Administrador instance;
+
+        private Administrador()
         {
-            this.Servicios  = new List<ServicioMedico>();
+            this.Servicios = new List<ServicioMedico>();
             this.Medicamentos = new List<Medicamento>();
         }
-       
 
-        public void addServicio() { }
-            //new servicio switch de acuredo al tipo de servicio
-            //pushear a la lista de servicios
+        public static Administrador GetInstance()
+        {
+            if (instance == null)
+            {
+                instance = new Administrador();
+            }
+            return instance;
+        }
 
-        public void addMedicamento(Medicamento medicamento) {
+        public void addServicio()
+        {
+            // Implement adding a new service
+        }
 
+        public void addMedicamento(Medicamento medicamento)
+        {
             Medicamentos.Add(medicamento);
         }
-        //new medicamento
-        //pushear a la lista de medicamentos
-
 
         public void showAll()
         {
-           
-            foreach (var elemento in Medicamentos)
+            foreach (var medicamento in Medicamentos)
             {
-                MessageBox.Show($"Nombre: {elemento.Nombre}, Porcentaje Ganancia: {elemento.Porcentaje_ganancia} , Precio Lista: {elemento.Precio_lista}");
-                // Imprime más campos si es necesario
+                MessageBox.Show($"Nombre: {medicamento.Nombre}, Porcentaje Ganancia: {medicamento.Porcentaje_ganancia}, Precio Lista: {medicamento.Precio_lista}");
+                // Display more fields if necessary
             }
         }
 
-        //return servicios y medicamentos
+        // Other methods like montoTotalFacturado, cantServiciosSimples, etc.
 
-
-        public void montoTotalFacturado() { }
-        public void cantServiciosSimples() { }
-
+        // You can add more functionalities to your class as required
     }
 }
-

@@ -30,8 +30,8 @@ namespace SaludARWinForms.Views
 
         private void ServiceDetail_Load(object sender, EventArgs e)
         {
-            mostrarServicio = new Administrador();
-            mostrarServicio.showAll();
+            Administrador admin = Administrador.GetInstance();
+            admin.showAll();
         }
     }
 }

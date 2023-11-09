@@ -1,6 +1,6 @@
 namespace SaludARWinForms
 {
-    internal static class Program
+    public static class Program
     {
         /// <summary>
         ///  The main entry point for the application.
@@ -12,6 +12,9 @@ namespace SaludARWinForms
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new MainView());
+
         }
     }
+
+
 }

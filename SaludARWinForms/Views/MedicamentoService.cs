@@ -34,28 +34,21 @@ namespace SaludARWinForms.Views
 
         private void btnAgregarMedicamento_Click(object sender, EventArgs e)
         {
-            Medicamento medicamentos;
-            Administrador elemento;
-            elemento = new Administrador();
+            Administrador admin = Administrador.GetInstance();
 
             string nombre = txtNombreMedicamento.Text;
-            double ganancia = Convert.ToDouble(txtGanancia.Text);// Aquí asumimos que se ingresará un número válido
-            double precio = Convert.ToDouble(txtPrecio.Text);
+            double ganancia = Double.Parse(txtGanancia.Text);// Aquí asumimos que se ingresará un número válido
+            double precio = Double.Parse(txtPrecio.Text);
 
-            if (!string.IsNullOrEmpty(nombre))
+            if (nombre != "")
             {
-                medicamentos = new Medicamento(nombre, ganancia, precio)
-                {
-                    Nombre = nombre,
-                    Porcentaje_ganancia = ganancia,
-                    Precio_lista = precio
-                };
-
-                elemento.addMedicamento(medicamentos);
-
+                Medicamento medicamento1 = new Medicamento(nombre, ganancia, precio);
+                admin.addMedicamento(medicamento1);
                 txtNombreMedicamento.Clear();
                 txtGanancia.Clear();
                 txtPrecio.Clear();
+               
+
             }
             else
             {
