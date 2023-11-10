@@ -32,6 +32,7 @@
             btnMedicamento = new Button();
             btnLaboratorio = new Button();
             btnInternacion = new Button();
+            btnVolver = new Button();
             SuspendLayout();
             // 
             // label1
@@ -65,6 +66,7 @@
             btnLaboratorio.TabIndex = 3;
             btnLaboratorio.Text = "Laboratorio";
             btnLaboratorio.UseVisualStyleBackColor = true;
+            btnLaboratorio.Click += btnLaboratorio_Click;
             // 
             // btnInternacion
             // 
@@ -75,12 +77,24 @@
             btnInternacion.TabIndex = 4;
             btnInternacion.Text = "Internacion";
             btnInternacion.UseVisualStyleBackColor = true;
+            btnInternacion.Click += btnInternacion_Click;
+            // 
+            // btnVolver
+            // 
+            btnVolver.Location = new Point(658, 400);
+            btnVolver.Name = "btnVolver";
+            btnVolver.Size = new Size(130, 38);
+            btnVolver.TabIndex = 5;
+            btnVolver.Text = "Volver";
+            btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.Click += btnVolver_Click;
             // 
             // ServiceAdd
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnVolver);
             Controls.Add(btnInternacion);
             Controls.Add(btnLaboratorio);
             Controls.Add(btnMedicamento);
@@ -97,5 +111,6 @@
         private Button btnMedicamento;
         private Button btnLaboratorio;
         private Button btnInternacion;
+        private Button btnVolver;
     }
 }

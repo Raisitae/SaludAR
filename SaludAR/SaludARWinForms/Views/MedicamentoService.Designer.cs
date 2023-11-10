@@ -41,56 +41,64 @@
             // lblNombreMedicamento
             // 
             lblNombreMedicamento.AutoSize = true;
-            lblNombreMedicamento.Location = new Point(119, 68);
+            lblNombreMedicamento.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblNombreMedicamento.Location = new Point(81, 61);
             lblNombreMedicamento.Name = "lblNombreMedicamento";
-            lblNombreMedicamento.Size = new Size(128, 15);
+            lblNombreMedicamento.Size = new Size(211, 28);
             lblNombreMedicamento.TabIndex = 0;
             lblNombreMedicamento.Text = "Nombre Medicamento";
+            lblNombreMedicamento.Click += lblNombreMedicamento_Click;
             // 
             // lblGanancia
             // 
             lblGanancia.AutoSize = true;
-            lblGanancia.Location = new Point(119, 109);
+            lblGanancia.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblGanancia.Location = new Point(81, 118);
             lblGanancia.Name = "lblGanancia";
-            lblGanancia.Size = new Size(115, 15);
+            lblGanancia.Size = new Size(188, 28);
             lblGanancia.TabIndex = 1;
             lblGanancia.Text = "Porcentaje Ganancia";
+            lblGanancia.Click += lblGanancia_Click;
             // 
             // lblPrecio
             // 
             lblPrecio.AutoSize = true;
-            lblPrecio.Location = new Point(119, 161);
+            lblPrecio.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPrecio.Location = new Point(81, 174);
             lblPrecio.Name = "lblPrecio";
-            lblPrecio.Size = new Size(40, 15);
+            lblPrecio.Size = new Size(66, 28);
             lblPrecio.TabIndex = 2;
             lblPrecio.Text = "Precio";
             lblPrecio.Click += lblPrecio_Click;
             // 
             // txtNombreMedicamento
             // 
-            txtNombreMedicamento.Location = new Point(298, 65);
+            txtNombreMedicamento.Location = new Point(360, 66);
             txtNombreMedicamento.Name = "txtNombreMedicamento";
             txtNombreMedicamento.Size = new Size(182, 23);
             txtNombreMedicamento.TabIndex = 3;
+            txtNombreMedicamento.TextChanged += txtNombreMedicamento_TextChanged;
             // 
             // txtGanancia
             // 
-            txtGanancia.Location = new Point(298, 106);
+            txtGanancia.Location = new Point(360, 123);
             txtGanancia.Name = "txtGanancia";
             txtGanancia.Size = new Size(182, 23);
             txtGanancia.TabIndex = 4;
+            txtGanancia.TextChanged += txtGanancia_TextChanged;
             // 
             // txtPrecio
             // 
-            txtPrecio.Location = new Point(298, 153);
+            txtPrecio.Location = new Point(360, 182);
             txtPrecio.Name = "txtPrecio";
             txtPrecio.Size = new Size(182, 23);
             txtPrecio.TabIndex = 5;
+            txtPrecio.TextChanged += txtPrecio_TextChanged;
             // 
             // btnAgregarMedicamento
             // 
             btnAgregarMedicamento.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            btnAgregarMedicamento.Location = new Point(542, 61);
+            btnAgregarMedicamento.Location = new Point(113, 266);
             btnAgregarMedicamento.Name = "btnAgregarMedicamento";
             btnAgregarMedicamento.Size = new Size(179, 50);
             btnAgregarMedicamento.TabIndex = 6;
@@ -100,20 +108,22 @@
             // 
             // btnSalir
             // 
+            btnSalir.BackColor = SystemColors.Control;
             btnSalir.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSalir.Location = new Point(542, 134);
+            btnSalir.Location = new Point(360, 266);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(179, 50);
             btnSalir.TabIndex = 7;
             btnSalir.Text = "SALIR";
-            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
             // 
             // MedicamentoService
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.Beige;
+            ClientSize = new Size(625, 365);
             Controls.Add(btnSalir);
             Controls.Add(btnAgregarMedicamento);
             Controls.Add(txtPrecio);

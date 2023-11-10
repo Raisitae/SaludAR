@@ -30,6 +30,12 @@ namespace SaludARWinForms
             precio_final = precio_lista * porcentaje;
             return precio_final;
         }
+
+        public override string ToString()
+        {
+            return nombre + " " + precio_final + " " + porcentaje_ganancia;
+        }
+
     }
 
 }

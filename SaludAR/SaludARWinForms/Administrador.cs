@@ -14,14 +14,27 @@ namespace SaludARWinForms
         private List<ServicioMedico> Servicios;
         public List<Medicamento> Medicamentos;
 
+        // Singleton instance
+        private static Administrador instance;
+
         public Administrador()
         {
             this.Servicios  = new List<ServicioMedico>();
             this.Medicamentos = new List<Medicamento>();
         }
-       
 
-        public void addServicio() { }
+        public static Administrador GetInstance()
+        {
+            if (instance == null)
+            {
+                instance = new Administrador();
+            }
+            return instance;
+        }
+
+        public void addServicio() { 
+            
+        }
             //new servicio switch de acuredo al tipo de servicio
             //pushear a la lista de servicios
 
@@ -41,6 +54,8 @@ namespace SaludARWinForms
                 MessageBox.Show($"Nombre: {elemento.Nombre}, Porcentaje Ganancia: {elemento.Porcentaje_ganancia} , Precio Lista: {elemento.Precio_lista}");
                 // Imprime más campos si es necesario
             }
+
+          
         }
 
         //return servicios y medicamentos

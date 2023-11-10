@@ -12,7 +12,7 @@ namespace SaludARWinForms
         private int cantidad_dias;
         private string? especialidad;
 
-        public ServicioInternacion(int cantidad_dias, string especialidad, string? nombre, double precio) : base(nombre, precio)
+        public ServicioInternacion(int cantidad_dias, string especialidad,double precio) :base(especialidad,precio)
         {
             this.cantidad_dias = cantidad_dias;
             this.especialidad = especialidad;
@@ -27,9 +27,10 @@ namespace SaludARWinForms
             throw new NotImplementedException();
         }
 
-        public double calcularPrecio(double precio, int cantidad_dias)
+        public double calcularPrecio(int cantidad_dias)
         {
-            precio = cantidad_dias * precio;
+            double precio = 0;
+            precio = cantidad_dias * 20000;
             calcularPrecioFinal(precio);
             return precio;
         }

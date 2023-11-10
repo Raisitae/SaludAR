@@ -27,8 +27,9 @@ namespace SaludARWinForms
             throw new NotImplementedException();
         }
 
-        public double calcularPrecio(double precio, int cantidad_dias, int nivel_complejidad)
+        public double calcularPrecio( int cantidad_dias, int nivel_complejidad)
         {
+            double precio = 0;
             if ((nivel_complejidad < 0 ) & (nivel_complejidad > 3)) {
                 precio += 10000 * cantidad_dias;
             } else if (nivel_complejidad >3)

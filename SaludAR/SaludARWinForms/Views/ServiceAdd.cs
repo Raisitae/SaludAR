@@ -31,5 +31,28 @@ namespace SaludARWinForms
             formMedicamentoService = null;
             this.Show();
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnLaboratorio_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form formLaboratorioService = new LaboratorioService();
+            formLaboratorioService.ShowDialog();
+            formLaboratorioService = null;
+            this.Show();
+        }
+
+        private void btnInternacion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form formInternacionService = new InternacionService();
+            formInternacionService.ShowDialog();
+            formInternacionService = null;
+            this.Show();
+        }
     }
 }
