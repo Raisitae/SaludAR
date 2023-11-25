@@ -1,5 +1,6 @@
 using Microsoft.Win32;
 using SaludARWinForms.Views;
+using System.Drawing.Drawing2D;
 
 namespace SaludARWinForms
 {
@@ -8,6 +9,30 @@ namespace SaludARWinForms
         public MainView()
         {
             InitializeComponent();
+            this.DoubleBuffered = true;
+        }
+
+        protected override void OnResize(EventArgs e)
+        {
+            base.OnResize(e);
+            Invalidate(); // Activa repaint cuando se activa resize
+        }
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+
+            Color lavenderColor = Color.FromArgb(176, 156, 215);
+            Color lightPinkColor = Color.FromArgb(242, 136, 182);
+
+            using (LinearGradientBrush brush = new LinearGradientBrush(
+                this.ClientRectangle,
+                lavenderColor,
+                lightPinkColor,
+                LinearGradientMode.Horizontal))
+            {
+                e.Graphics.FillRectangle(brush, this.ClientRectangle);
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -21,31 +46,17 @@ namespace SaludARWinForms
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Mensaje");
             this.Close();
         }
 
         private void btnDetail_Click(object sender, EventArgs e)
         {
 
-            Administrador admin = Administrador.GetInstance();
-
-            Medicamento medicamento1 = new Medicamento("prueba",333,444);
-            admin.addMedicamento(medicamento1);
-            Medicamento medicamento2 = new Medicamento("prueba2", 333, 444);
-            admin.addMedicamento(medicamento2);
-
-            admin.showAll();
             this.Hide();
             Form formGrid = new ModalServices();
             formGrid.ShowDialog();
             formGrid = null;
             this.Show();
-        }
-
-        private void MainView_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

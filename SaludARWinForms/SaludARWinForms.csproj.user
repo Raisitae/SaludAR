@@ -1,19 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
   <ItemGroup>
+    <Compile Update="Views\AdmittionService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\LabService.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\MedicamentoService.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\ModalServices.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\ServiceAdd.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Views\MainView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\ServiceDetail.cs">
+    <Compile Update="Views\ServiceAdd.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

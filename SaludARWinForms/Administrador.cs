@@ -5,10 +5,16 @@ namespace SaludARWinForms
 {
     internal class Administrador
     {
-        private List<ServicioMedico> Servicios;
+        public List<ServicioMedico> Servicios;
         public List<Medicamento> Medicamentos;
 
-        // Singleton instance
+        // Singleton es un patrón de diseño creacional que nos permite asegurarnos de que una clase
+        // tenga una única instancia, a la vez que proporciona un punto de acceso global a dicha instancia.
+        // En este caso, como no queremos trabajar con una BD, instanciamos el patrón singleton en el administrador
+        // para que cada vez que agreguemos un servicio o un medicamento, se agregue a la misma lista y luego podamos
+        // acceder a todos los servicios
+
+
         private static Administrador instance;
 
         private Administrador()
@@ -17,6 +23,7 @@ namespace SaludARWinForms
             this.Medicamentos = new List<Medicamento>();
         }
 
+        
         public static Administrador GetInstance()
         {
             if (instance == null)
@@ -26,27 +33,16 @@ namespace SaludARWinForms
             return instance;
         }
 
-        public void addServicio()
+        public void addServicio(ServicioMedico servicio)
         {
-            // Implement adding a new service
+            Servicios.Add(servicio);
+
         }
 
         public void addMedicamento(Medicamento medicamento)
         {
             Medicamentos.Add(medicamento);
         }
-
-        public void showAll()
-        {
-            foreach (var medicamento in Medicamentos)
-            {
-                MessageBox.Show($"Nombre: {medicamento.Nombre}, Porcentaje Ganancia: {medicamento.Porcentaje_ganancia}, Precio Lista: {medicamento.Precio_lista}");
-                // Display more fields if necessary
-            }
-        }
-
-        // Other methods like montoTotalFacturado, cantServiciosSimples, etc.
-
-        // You can add more functionalities to your class as required
+  
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MedicamentoService));
             lblNombreMedicamento = new Label();
             lblGanancia = new Label();
             lblPrecio = new Label();
@@ -35,86 +36,113 @@
             txtGanancia = new TextBox();
             txtPrecio = new TextBox();
             btnAgregarMedicamento = new Button();
-            btnSalir = new Button();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // lblNombreMedicamento
             // 
             lblNombreMedicamento.AutoSize = true;
-            lblNombreMedicamento.Location = new Point(119, 68);
+            lblNombreMedicamento.BackColor = Color.Transparent;
+            lblNombreMedicamento.Font = new Font("Arial", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblNombreMedicamento.Location = new Point(84, 75);
             lblNombreMedicamento.Name = "lblNombreMedicamento";
-            lblNombreMedicamento.Size = new Size(128, 15);
+            lblNombreMedicamento.Size = new Size(203, 23);
             lblNombreMedicamento.TabIndex = 0;
             lblNombreMedicamento.Text = "Nombre Medicamento";
             // 
             // lblGanancia
             // 
             lblGanancia.AutoSize = true;
-            lblGanancia.Location = new Point(119, 109);
+            lblGanancia.BackColor = Color.Transparent;
+            lblGanancia.Font = new Font("Arial", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblGanancia.Location = new Point(84, 146);
             lblGanancia.Name = "lblGanancia";
-            lblGanancia.Size = new Size(115, 15);
+            lblGanancia.Size = new Size(193, 23);
             lblGanancia.TabIndex = 1;
             lblGanancia.Text = "Porcentaje Ganancia";
             // 
             // lblPrecio
             // 
             lblPrecio.AutoSize = true;
-            lblPrecio.Location = new Point(119, 161);
+            lblPrecio.BackColor = Color.Transparent;
+            lblPrecio.Font = new Font("Arial", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPrecio.Location = new Point(84, 220);
             lblPrecio.Name = "lblPrecio";
-            lblPrecio.Size = new Size(40, 15);
+            lblPrecio.Size = new Size(66, 23);
             lblPrecio.TabIndex = 2;
             lblPrecio.Text = "Precio";
-            lblPrecio.Click += lblPrecio_Click;
             // 
             // txtNombreMedicamento
             // 
-            txtNombreMedicamento.Location = new Point(298, 65);
+            txtNombreMedicamento.Font = new Font("Arial", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNombreMedicamento.Location = new Point(84, 99);
             txtNombreMedicamento.Name = "txtNombreMedicamento";
-            txtNombreMedicamento.Size = new Size(182, 23);
+            txtNombreMedicamento.Size = new Size(361, 30);
             txtNombreMedicamento.TabIndex = 3;
             // 
             // txtGanancia
             // 
-            txtGanancia.Location = new Point(298, 106);
+            txtGanancia.Font = new Font("Arial", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            txtGanancia.Location = new Point(84, 170);
             txtGanancia.Name = "txtGanancia";
-            txtGanancia.Size = new Size(182, 23);
+            txtGanancia.Size = new Size(361, 30);
             txtGanancia.TabIndex = 4;
             // 
             // txtPrecio
             // 
-            txtPrecio.Location = new Point(298, 153);
+            txtPrecio.Font = new Font("Arial", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPrecio.Location = new Point(84, 244);
             txtPrecio.Name = "txtPrecio";
-            txtPrecio.Size = new Size(182, 23);
+            txtPrecio.Size = new Size(361, 30);
             txtPrecio.TabIndex = 5;
             // 
             // btnAgregarMedicamento
             // 
-            btnAgregarMedicamento.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            btnAgregarMedicamento.Location = new Point(542, 61);
+            btnAgregarMedicamento.Font = new Font("Arial", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAgregarMedicamento.Location = new Point(84, 319);
             btnAgregarMedicamento.Name = "btnAgregarMedicamento";
             btnAgregarMedicamento.Size = new Size(179, 50);
             btnAgregarMedicamento.TabIndex = 6;
-            btnAgregarMedicamento.Text = "AGREGAR";
+            btnAgregarMedicamento.Text = "Agregar";
             btnAgregarMedicamento.UseVisualStyleBackColor = true;
             btnAgregarMedicamento.Click += btnAgregarMedicamento_Click;
             // 
-            // btnSalir
+            // pictureBox1
             // 
-            btnSalir.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSalir.Location = new Point(542, 134);
-            btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(179, 50);
-            btnSalir.TabIndex = 7;
-            btnSalir.Text = "SALIR";
-            btnSalir.UseVisualStyleBackColor = true;
-            btnSalir.Click += btnSalir_Click;
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Cursor = Cursors.Hand;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(10, 9);
+            pictureBox1.Margin = new Padding(4, 3, 4, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(66, 49);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += flecha_Click;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(519, 64);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(235, 229);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 10;
+            pictureBox2.TabStop = false;
             // 
             // MedicamentoService
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(btnSalir);
+            ClientSize = new Size(834, 411);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Controls.Add(btnAgregarMedicamento);
             Controls.Add(txtPrecio);
             Controls.Add(txtGanancia);
@@ -123,8 +151,10 @@
             Controls.Add(lblGanancia);
             Controls.Add(lblNombreMedicamento);
             Name = "MedicamentoService";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MedicamentoService";
-            Load += MedicamentoService_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -138,6 +168,7 @@
         private TextBox txtGanancia;
         private TextBox txtPrecio;
         private Button btnAgregarMedicamento;
-        private Button btnSalir;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

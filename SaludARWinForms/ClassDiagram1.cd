@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SaludARWinForms.Administrador">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAMAAAAAAAAAAAAAEAAAABABAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Administrador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SaludARWinForms.ServicioMedico">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAEAAAgAAQAAAAEAAAAAAAEAgAEAA=</HashCode>
+      <FileName>ServicioMedico.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SaludARWinForms.ServicioLaboratorio">
+    <Position X="4.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAABAAAACAAAAAEAAAABAAEAAAAAAAEAAAEBA=</HashCode>
+      <FileName>ServicioLaboratorio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SaludARWinForms.ServicioInternacion">
+    <Position X="1.25" Y="4.25" Width="1.5" />
+    <InheritanceLine Type="SaludARWinForms.ServicioMedico" FixedToPoint="true">
+      <Path>
+        <Point X="4" Y="3.661" />
+        <Point X="4" Y="3.875" />
+        <Point X="2.062" Y="3.875" />
+        <Point X="2.062" Y="4.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAEAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAABEBA=</HashCode>
+      <FileName>ServicioInternacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SaludARWinForms.Medicamento">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACCAEAAAgAABAAAAAAIAAAgAEAABAAA=</HashCode>
+      <FileName>Medicamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

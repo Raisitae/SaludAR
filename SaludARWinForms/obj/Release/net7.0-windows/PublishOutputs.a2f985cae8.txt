@@ -1,0 +1,5 @@
+C:\Users\rerlich\Desktop\Sistemas Orientados a Objetos\SaludARWinForms.exe
+C:\Users\rerlich\Desktop\Sistemas Orientados a Objetos\SaludARWinForms.dll
+C:\Users\rerlich\Desktop\Sistemas Orientados a Objetos\SaludARWinForms.deps.json
+C:\Users\rerlich\Desktop\Sistemas Orientados a Objetos\SaludARWinForms.runtimeconfig.json
+C:\Users\rerlich\Desktop\Sistemas Orientados a Objetos\SaludARWinForms.pdb

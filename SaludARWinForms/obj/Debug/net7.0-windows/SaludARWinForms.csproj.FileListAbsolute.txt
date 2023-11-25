@@ -4,8 +4,6 @@ C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\bin\Debug\net7.0-w
 C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\bin\Debug\net7.0-windows\SaludARWinForms.dll
 C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\bin\Debug\net7.0-windows\SaludARWinForms.pdb
 C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.MainView.resources
-C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.ServiceAdd.resources
-C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.Views.ServiceDetail.resources
 C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.csproj.GenerateResource.cache
 C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.AssemblyInfoInputs.cache
@@ -37,3 +35,7 @@ C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradi
 C:\Users\USUARIO\Desktop\Joaquin Soria\Tecnicatura Desarrollo de Software\Paradigma de Objetos\SaludAR\SaludARWinForms\obj\Debug\net7.0-windows\ref\SaludARWinForms.dll
 C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.Views.MedicamentoService.resources
 C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.Views.ModalServices.resources
+C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.Views.LabService.resources
+C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.Views.AdmittionService.resources
+C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.Views.ServiceAdd.resources
+C:\Users\rerlich\source\repos\SaludARWinForms\SaludARWinForms\obj\Debug\net7.0-windows\SaludARWinForms.Properties.Resources.resources

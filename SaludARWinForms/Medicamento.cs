@@ -18,23 +18,22 @@ namespace SaludARWinForms
             this.nombre = nombre;
             this.porcentaje_ganancia = porcentaje_ganancia;
             this.precio_lista = precio_lista;
+            precio_final = calcular_precio(porcentaje_ganancia, precio_lista);
         }
 
         public string? Nombre { get => nombre; set => nombre = value; }
         public double Porcentaje_ganancia { get => porcentaje_ganancia; set => porcentaje_ganancia = value; }
         public double Precio_lista { get => precio_lista; set => precio_lista = value; }
+        public double Precio_Final { get => precio_final; set => precio_final = value; }
+
 
         public double calcular_precio(double porcentaje_ganancia, double precio_lista)
         {
-            double porcentaje = (porcentaje_ganancia / 100) + 1;
+            double porcentaje = ((porcentaje_ganancia / 100) + 1);
             precio_final = precio_lista * porcentaje;
             return precio_final;
         }
 
-        public override string ToString()
-        {
-            return nombre + " " + precio_final + " " + porcentaje_ganancia;
-        }
     }
 
 }
